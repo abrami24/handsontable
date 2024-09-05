@@ -1,0 +1,54 @@
+.p-paginator {
+  justify-content: right;
+  position: relative;
+}
+.p-pagination-show-page {
+  width: 220px;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+}
+.p-paginator .p-paginator-pages .p-paginator-page {
+  border: 1px solid #cbcbcb;
+  color: #5f5f5f;
+  min-width: 2rem;
+  height: 2rem;
+  margin: 0.143rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.p-paginator .p-paginator-pages .p-paginator-page:not(.p-highlight):hover {
+  border-color: #cbcbcb;
+}
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background: #aac8a7;
+  border-color: #aac8a7;
+  color: #fff;
+}
+.p-paginator .p-paginator-first,
+.p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next,
+.p-paginator .p-paginator-last {
+  min-width: 2rem;
+  height: 2rem;
+  border: 1px solid #cbcbcb;
+  border-radius: 5px;
+}
+
+.p-pagination-item-page .p-dropdown {
+  height: 2rem;
+  width: 3rem;
+  margin: 0;
+}
+.p-pagination-item-page .p-dropdown-label.p-inputtext {
+  padding: 8px 2px 8px 5px;
+  margin: 0;
+  font-size: 0.875rem;
+}
+.p-pagination-item-page .p-dropdown-trigger {
+  width: 1.1rem;
+  padding-right: 5px;
+  padding-top: 3px;
+}

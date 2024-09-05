@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+  margin: 40px
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Handsontable */
+body {
+  background: #f2f2f4;
+}
+.datagrid-photo {
+  width: 80px;
+  max-height: 80px;
+  text-align: center;
+  margin: 3px;
+}
+.filter-dataGrid {
+  max-height: 100px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+div .list-filters:first-child {
+  margin-right: 1.5rem;
+}
+.handsontable.htColumnHeaders table {
+  padding: 0 1rem;
+}
+/* Filter Icon */
+/* .handsontable.htColumnHeaders .changeType:before {
+  content: "\e930";
+  font-family: primeicons;
+  font-style: normal;
+  font-weight: 400;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 15px;
+} */
+.handsontable .changeType,
+.handsontable .htFiltersActive .changeType {
+  background: none;
+  border: none;
+  border-radius: 0;
+  margin-top: 0;
+  padding-top: 8px;
+}
+.handsontable .changeType:hover {
+  border: none;
+}
+.handsontable .htFiltersActive .changeType {
+  color: #777;
+}
+.handsontable .filter-icon {
+  float: right;
+  margin-top: 5px;
+}
+
+.handsontable.htColumnHeaders table[role="presentation"] thead th {
+  border: none !important;
+  background: #e2e2eb !important;
+  padding: 5px 0;
+  color: #666667 !important;
+  vertical-align: middle !important;
+}
+.handsontable.htColumnHeaders table[role="presentation"] thead th:first-child {
+  border-top-left-radius: 12px !important;
+  border-bottom-left-radius: 12px !important;
+}
+.handsontable.htColumnHeaders table[role="presentation"] thead th:last-child {
+  border-top-right-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+}
+.ht_clone_top_left_corner.handsontable
+  table[role="presentation"]
+  thead
+  th:last-child {
+  border-radius: 0 !important;
+}
+
+/* Row style */
+/* .handsontable.htColumnHeaders table[role="presentation"]{
+  border-spacing: 0 0.8rem;
+} */
+.handsontable.htColumnHeaders table[role="presentation"] tbody tr td {  
+  /* padding: 8px 0; */
+  border: none !important;
+  background: #fff;
+  vertical-align: middle;
+  text-align: center;
+}
+.handsontable.htColumnHeaders table[role="presentation"] tbody tr td:first-child {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.handsontable.htColumnHeaders table[role="presentation"] tbody tr td:last-child {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
